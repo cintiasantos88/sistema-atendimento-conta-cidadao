@@ -1,0 +1,140 @@
+<html>
+<head>
+<style>
+
+.governanca{
+    width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h1 {
+    color: #1351B4;
+}
+
+.subtitulo {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.nivel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.estrategico {
+    background: #EEF5FF;
+    border-left: 8px solid #1351B4;
+    justify-content: center;
+    align-items: center;
+}
+
+.operacional {
+    background: #F0FAF2;
+    border-left: 8px solid #168821;
+    justify-content: center;
+}
+
+.descricao {
+flex: 1 1 300px;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 220px;
+    text-align: center;
+    display: flex;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    font-weight: bold;
+}
+
+
+.gestor {
+    color: #C68A00;
+    position: relative;
+}
+.gestor::before {
+content: "";
+position: absolute;
+width: 3px;
+height: 80px;
+background: #555;
+left: 50%;
+top: 100%;
+transform: translateX(-50%);
+}
+
+.gestor::after {
+content: "\25BC";
+position: absolute;
+left: 50%;
+top: calc(100% + 35px);
+transform: translateX(-50%);
+color: #555;
+font-size: 18px;
+}
+.atendente {
+    color:#168821 ;
+}
+
+
+</html>
+</head>
+</style>
+
+<div class="governanca">
+
+    <h2 style="text-align:center";>Estrutura de Governança Sistema de Atendimento</h2>
+    <p class="subtitulo" style="text-align:center";>
+        Hierarquia e relacionamento entre os atores responsáveis pela gestão e operação da rede.
+    </p>
+
+  
+
+    <!-- Nível Tático -->
+    <section class="nivel tatico">
+
+        <div class="descricao">
+            <h3>NÍVEL TÁTICO</h3>
+            <p>Gestão  e acompanhamento da operação.</p>
+        </div>
+
+        <div style="display:flex; flex-direction: column; align-items:center;" class="card gestor">
+               <i class="fas fa-user-cog" style="color: rgb(237, 154, 11); font-size:30px"></i>Gestor 
+        </div>
+
+        
+
+    </section>
+
+    <!-- Nível Operacional -->
+    <section class="nivel operacional">
+
+        <div class="descricao">
+            <h3>NÍVEL OPERACIONAL</h3>
+            <p>Execução dos atendimentos e suporte ao cidadão.</p>
+        </div>
+
+       <div style="display:flex; flex-direction: column; align-items:center;" class="card atendente">
+                  <i class="fa-solid fa-user" style="color: rgb(7, 144, 24);font-size:30px";></i> Atendente
+        </div>
+
+    </section>
+    
+
+</div>
