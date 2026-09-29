@@ -14,7 +14,7 @@
 - RF13 -  A solicitação de atendimento para o canal de suporte deve aproveitar os dados do usuário e validações já utilizados pelo sistema, sem a necessidade de digitação novamente dos dados do cidadão. 
 - RF14 - A solicitação gerada para o canal de suporte a partir de um atendimento, deve considerar que o cidadão será atendido por outro canal (instância superior) e permitir que o atendente esteja disponível para atender outro cidadão.
 - RF15 - O sistema deve garantir a rastreabilidade das solicitações geradas para o canal de suporte.
-
+- RF16 - O cadastro de atendentes deve conter: CPF, nome, email e/ou telefone do atendente.
 
 #Não Funcionais: 
 - RNF01 - O sistema deve garantir disponibilidade em 95% do horário comercial (8-18h).
